@@ -1,0 +1,36 @@
+.partners {
+	margin-bottom: $bottom;
+}
+
+.partners__wrapper {
+	padding: 2rem;
+	border-radius: $radius;
+	background-color: $concrete;
+}
+
+.partners__heading{
+	margin-bottom: $bottom;
+	font-size: clamp(2.4rem, 2.066rem + 1.67vw, 3.6rem);
+	font-weight: 600;
+	color: $scorpion;
+}
+
+.partners__list {
+	grid-template-columns: repeat(4, 1fr);
+	gap: $gap;
+}
+
+.partners__item {
+	justify-content: center;
+	align-items: center;
+	max-height: 15rem;
+	padding: 2rem;
+	border-radius: $radius;
+	-webkit-box-shadow: 2px 3px 10px 0px rgba(34, 60, 80, 0.2);
+	-moz-box-shadow: 2px 3px 10px 0px rgba(34, 60, 80, 0.2);
+	box-shadow: 2px 3px 10px 0px rgba(34, 60, 80, 0.2);
+}
+
+.partners__img {
+	max-height: 15rem;
+}

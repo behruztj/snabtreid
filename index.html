@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>СнабТрейд</title>
+		<link rel="icon" href="././image/favicon/favicon.svg" />
+		<link rel="stylesheet" href="./css/main.css" />
+	</head>
+
+	<body>
+		<!-- Modal -->
+		<!-- Modal -->
+		<div class="modal flex" aria-hidden="true">
+			<div class="modal__container">
+				<button class="modal__btn-cross" aria-label="Закрыть модальное окно">
+					<div class="modal__cross-line line1"></div>
+					<div class="modal__cross-line line2"></div>
+				</button>
+				<h2 class="modal__heading">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</h2>
+				<address class="modal__address flex">
+					<a
+						class="modal-social__link flex"
+						href="https://t.me/+79292021707"
+						target="_blank"
+						aria-label="Telegram"
+					>
+						<svg class="modal__svg" viewBox="0 0 48 48">
+							<use xlink:href="./image/sprite.svg#telegram" />
+						</svg>
+						<span class="modal__social-span">Telegram</span>
+					</a>
+					<a
+						class="modal-social__link flex"
+						href="https://wa.me/79292021707"
+						target="_blank"
+						aria-label="WhatsApp"
+					>
+						<svg class="modal__svg" viewBox="0 0 48 48">
+							<use xlink:href="./image/sprite.svg#whatsapp" />
+						</svg>
+						<span class="modal__social-span">WhatsApp</span>
+					</a>
+					<a
+						class="modal-social__link flex"
+						href="mailto:snabtrade96@gmail.com"
+						aria-label="E-mail"
+					>
+						<svg class="modal__svg" viewBox="0 0 48 48">
+							<use xlink:href="./image/sprite.svg#mail" />
+						</svg>
+						<span class="modal__social-span">E-mail</span>
+					</a>
+				</address>
+				<form class="modal__form modal-form flex" id="form" autocomplete="off">
+					<input
+						class="modal-form__input modal-input-name"
+						id="name"
+						type="text"
+						name="name"
+						placeholder="Имя"
+						autocomplete="off"
+					/>
+					<input
+						class="modal-form__input modal-input-phone"
+						id="tel"
+						type="tel"
+						name="phone"
+						placeholder="+7(___)___-__-__"
+						autocomplete="off"
+					/>
+					<input
+						class="modal-form__input modal-input-email"
+						id="email"
+						type="email"
+						name="email"
+						placeholder="Email"
+						autocomplete="off"
+					/>
+					<button class="modal-form__btn modal-btn" type="submit">
+						Отправить
+					</button>
+					<p class="modal-form__desc modal-desc">
+						Нажимая на&nbsp;кнопку &laquo;Отправить&raquo;, Вы&nbsp;даете свое
+						согласие на&nbsp;обработку Персональных данных, согласно
+						<a class="modal-desc__doc" href="#!">Политике конфиденциальности</a>
+					</p>
+				</form>
+			</div>
+		</div>
+
+		<!-- Mobile Nav -->
+		<div class="mobile-nav flex">
+			<button class="mobile-nav__btn-cross">
+				<div class="mobile-nav__cross-line line1"></div>
+				<div class="mobile-nav__cross-line line2"></div>
+			</button>
+			<!-- Заголовок меню -->
+			<h2 class="mobile-nav__heading">Меню</h2>
+			<!-- Обертка для содержимого меню -->
+			<div class="mobile-nav__wrapper flex">
+				<!-- Список ссылок меню -->
+				<ul class="mobile-nav__list flex">
+					<li class="mobile-nav__item">
+						<a class="mobile-nav__link flex" href="#top"> Главная </a>
+					</li>
+					<li class="mobile-nav__item">
+						<a class="mobile-nav__link flex" href="#company"> Компания </a>
+					</li>
+					<li class="mobile-nav__item">
+						<a class="mobile-nav__link flex" href="#products"> Продукция </a>
+					</li>
+					<li class="mobile-nav__item">
+						<a class="mobile-nav__link flex" href="#footer"> Контакты </a>
+					</li>
+				</ul>
+				<!-- Контактная информация -->
+				<div class="mobile-nav__wrapper-address flex">
+					<address class="mobile-nav__address flex">
+						<a href="tel:+73433170042" class="mobile-nav__number number flex">
+							+7 (343) 317-00-42
+						</a>
+						<a href="tel:+79292021707" class="mobile-nav__number number flex">
+							+7 (929) 202-17-07
+						</a>
+					</address>
+					<!-- Социальные сети -->
+					<address class="mobile-nav__address-social mobile-nav__social flex">
+						<h2 class="mobile-nav__social-heading">ОТПРАВЬТЕ НАМ&nbsp;ТЗ:</h2>
+						<div class="mobile-nav__social-wrapper flex">
+							<a
+								class="mobile-nav__social-link flex"
+								href="https://t.me/+79292021707"
+								target="_blank"
+								aria-label="Telegram"
+							>
+								<svg class="mobile__svg" viewBox="0 0 48 48">
+									<use xlink:href="./image/sprite.svg#telegram" />
+								</svg>
+								<span class="mobile-nav__social-span">Telegram</span>
+							</a>
+							<a
+								class="mobile-nav__social-link flex"
+								href="https://wa.me/79292021707"
+								target="_blank"
+								aria-label="WhatsApp"
+							>
+								<svg class="mobile__svg" viewBox="0 0 48 48">
+									<use xlink:href="./image/sprite.svg#whatsapp" />
+								</svg>
+								<span class="mobile-nav__social-span">WhatsApp</span>
+							</a>
+							<a
+								class="mobile-nav__social-link flex"
+								href="mailto:snabtrade96@gmail.com"
+								aria-label="Email"
+							>
+								<svg class="mobile__svg" viewBox="0 0 48 48">
+									<use xlink:href="./image/sprite.svg#mail" />
+								</svg>
+								<span class="mobile-nav__social-span">E-mail</span>
+							</a>
+						</div>
+					</address>
+				</div>
+			</div>
+		</div>
+		<!-- Header -->
+		<header class="header">
+			<div class="container">
+				<div class="header__wrapper flex">
+					<!-- Nav -->
+					<nav class="header__nav flex">
+						<a class="header__logo logo flex" href="#!">
+							<svg class="logo__svg" viewBox="0 0 256 256">
+								<use xlink:href="./image/sprite.svg#logo" />
+							</svg>
+							СнабТрейд
+						</a>
+						<ul class="header__list flex">
+							<li class="header__item">
+								<a class="header__link" href="#top">Главная</a>
+							</li>
+							<li class="header__item">
+								<a class="header__link" href="#company">Компания</a>
+							</li>
+							<li class="header__item">
+								<a class="header__link" href="#products">Продукция</a>
+							</li>
+							<li class="header__item">
+								<a class="header__link" href="#footer">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+					<!-- Message -->
+					<address class="header__message message">
+						<ul class="message__list flex">
+							<li class="message__item flex">
+								<a
+									class="message__link"
+									href="https://t.me/+79292021707"
+									target="_blank"
+									aria-label="Telegram"
+								>
+									<svg class="message__svg" viewBox="0 0 48 48">
+										<use xlink:href="./image/sprite.svg#telegram" />
+									</svg>
+								</a>
+							</li>
+							<li class="message__item flex">
+								<a
+									class="message__link"
+									href="https://wa.me/+79292021707"
+									target="_blank"
+									aria-label="
+                          WhatsApp"
+								>
+									<svg class="message__svg" viewBox="0 0 48 48">
+										<use xlink:href="./image/sprite.svg#whatsapp" />
+									</svg>
+								</a>
+							</li>
+							<li class="message__item flex">
+								<a
+									class="message__link"
+									href="mailto:snabtrade96@gmail.com"
+									target="_blank"
+									aria-label="
+												Mail"
+								>
+									<svg class="message__svg" viewBox="0 0 48 48">
+										<use xlink:href="./image/sprite.svg#mail" />
+									</svg>
+								</a>
+							</li>
+						</ul>
+					</address>
+					<!-- Mobile nav btn -->
+					<button class="mobile-nav-btn" aria-label="Меню">
+						<div class="nav-icon"></div>
+					</button>
+				</div>
+			</div>
+		</header>
+		<!-- Main -->
+		<main class="main">
+			<h1 class="visibility-hidden">Электродвигатели для Вашего Бизнеса</h1>
+			<!-- Hero -->
+			<section class="hero" id="top">
+				<div class="container">
+					<div class="hero__wrapper flex">
+						<div class="hero__wrap-left">
+							<h2 class="hero__heading">Электродвигатели для Вашего Бизнеса</h2>
+							<p class="hero__desc">
+								Ваш надёжный партнёр в&nbsp;общем деле развития мировой
+								промышленности
+							</p>
+							<div class="hero__btn-group flex">
+								<button class="hero__btn">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</button>
+								<a class="hero__btn hero__btn--second" href="#products" type="button">
+									ПРОДУКЦИЯ
+								</a>
+							</div>
+						</div>
+						<div class="hero__wrap-right right flex">
+							<p class="right__desc">
+								Мы&nbsp;поможем Вам подобрать оборудование, которое будет
+								соответствовать Вашим производственным требованиям
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Company -->
+			<section class="company" id="company">
+				<div class="container">
+					<div class="company__wrapper flex">
+						<div class="company__left flex">
+							<p class="company__left-desc">
+								&laquo;СнабТрейд&raquo; занимается комплексными поставками
+								электрооборудования для различных отраслей нашей страны.
+							</p>
+						</div>
+						<div class="company__right">
+							<ul class="company__right-list flex">
+								<li class="company__right-item">
+									<p class="company__right-desc">
+										Поставка широкой линейки электродвигателей от&nbsp;0,10 кВт
+										до&nbsp;7&nbsp;МВт, российских и&nbsp;мировых производителей
+										на&nbsp;прямую от&nbsp;завода изготовителя.
+									</p>
+								</li>
+								<li class="company__right-item">
+									<p class="company__right-desc">
+										Вся поставляемая продукция сертифицирована, что позволяет
+										на&nbsp;многих этапах производства отследить качество
+										поставляемой продукции.
+									</p>
+								</li>
+								<li class="company__right-item">
+									<p class="company__right-desc">
+										Техническими специалистами &laquo;СнабТрейд&raquo;
+										выполняется ряд услуг от&nbsp;подбора электрооборудования
+										по&nbsp;вашим характеристикам до&nbsp;пуско-наладочных работ
+										на&nbsp;вашем предприятии
+									</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Products -->
+			<section class="products" id="products">
+				<div class="container">
+					<div class="products__wrapper flex">
+						<ul class="products__list grid">
+							<li class="products__item card flex">
+								<picture class="card__picture flex">
+									<source
+										srcset="./image/products/products1.webp"
+										type="image/webp"
+									/>
+									<img
+										class="card__img"
+										src="./image/products/products1.png"
+										alt="Общепромышленные электродвигатели"
+										class="card__img"
+									/>
+								</picture>
+								<div class="card__info flex">
+									<h3 class="card__title">Общепромышленные электродвигатели</h3>
+									<span class="card__span">Серии: АИР, А, АДМ</span>
+									<p class="card__desc">
+										Электродвигатели данного типа применяются практически
+										во&nbsp;всех сферах промышленности: строительной технике,
+										в&nbsp;системах промышленной вентиляции, в&nbsp;комплектации
+										с&nbsp;промышленными насосами, компрессорами и&nbsp;другими
+										типами оборудования.
+									</p>
+									<button class="card__button">ПОДРОБНЕЕ</button>
+								</div>
+							</li>
+							<li class="products__item card flex">
+								<picture class="card__picture flex">
+									<source
+										srcset="./image/products/products2.webp"
+										type="image/webp"
+									/>
+									<img
+										class="card__img"
+										src="./image/products/products2.png"
+										alt="Крановые электродвигатели"
+										class="card__img"
+									/>
+								</picture>
+								<div class="card__info flex">
+									<h3 class="card__title">Крановые электродвигатели</h3>
+									<span class="card__span">Серии: МТН, МТКН, 4MTH, 4MTKM</span>
+									<p class="card__desc">
+										Электродвигатели данного типа предназначены для работы
+										в&nbsp;электроприводах металлургических агрегатов
+										и&nbsp;подъемно-транспортных механизмов всех видов
+										и&nbsp;поставляются для комплектации башенных, козловых,
+										портальных, мостовых и&nbsp;других кранов.
+									</p>
+									<button class="card__button">ПОДРОБНЕЕ</button>
+								</div>
+							</li>
+							<li class="products__item card flex">
+								<picture class="card__picture flex">
+									<source
+										srcset="./image/products/products3.webp"
+										type="image/webp"
+									/>
+									<img
+										class="card__img"
+										src="./image/products/products3.png"
+										alt="Взрывозащищенные электродвигатели"
+										class="card__img"
+									/>
+								</picture>
+								<div class="card__info flex">
+									<h3 class="card__title">Взрывозащищенные электродвигатели</h3>
+									<span class="card__span">Серии: ВА, ВАО, АИМУ, АИМЛ</span>
+									<p class="card__desc">
+										Электродвигатели данного типа с&nbsp;маркировками
+										по&nbsp;взрывозащите &laquo;1ExdIIBT4&raquo;
+										и&nbsp;&laquo;1ExdIICT4Gb4&raquo; предназначены для работы
+										во&nbsp;взрывоопасных условиях, используются
+										в&nbsp;промышленных вентиляторных установках, приводах
+										в&nbsp;оборудовании химической и&nbsp;нефтегазовой отраслях,
+										топливораздаточных колонках.
+									</p>
+									<button class="card__button">ПОДРОБНЕЕ</button>
+								</div>
+							</li>
+							<li class="products__item card flex">
+								<picture class="card__picture flex">
+									<source
+										srcset="./image/products/products4.webp"
+										type="image/webp"
+									/>
+									<img
+										class="card__img"
+										src="./image/products/products4.png"
+										alt="Высоковольтные электродвигатели"
+										class="card__img"
+									/>
+								</picture>
+								<div class="card__info flex">
+									<h3 class="card__title">Высоковольтные электродвигатели</h3>
+									<span class="card__span">Серии: ДАЗО4, АОД, А4</span>
+									<p class="card__desc">
+										Электродвигатели данного типа предназначены для привода
+										механизмов мельниц, дымососов, вентиляторов, насосов.
+									</p>
+									<button class="card__button">ПОДРОБНЕЕ</button>
+								</div>
+							</li>
+							<li class="products__item card flex">
+								<picture class="card__picture flex">
+									<source
+										srcset="./image/products/products5.webp"
+										type="image/webp"
+									/>
+									<img
+										class="card__img"
+										src="./image/products/products5.png"
+										alt="Импортные электродвигатели (DIN CENELEC)"
+										class="card__img"
+									/>
+								</picture>
+								<div class="card__info flex">
+									<h3 class="card__title">
+										Импортные электродвигатели (DIN CENELEC)
+									</h3>
+									<span class="card__span">Производства WEG, Siemens, АВВ</span>
+									<p class="card__desc">
+										Также готовы подобрать и&nbsp;поставить электродвигатели
+										отечественных поставщиков с&nbsp;сохранением
+										габаритно-присоединительных размеров и&nbsp;электрических
+										параметров
+									</p>
+									<button class="card__button">ПОДРОБНЕЕ</button>
+								</div>
+							</li>
+						</ul>
+						<button class="products__button-show-more">ПОКАЗАТЬ ЕЩЁ</button>
+						<button id="show-less" class="products__button-show-more none">
+							СКРЫТЬ
+						</button>
+					</div>
+				</div>
+			</section>
+			<!-- Stages -->
+			<section class="stages">
+				<div class="container">
+					<div class="stages__wrapper">
+						<ul class="stages__list grid">
+							<li class="stages__item stages-item-bg1">
+								<svg class="stages__svg" viewBox="0 0 512.000000 512.000000">
+									<use xlink:href="./image/sprite.svg#calendar" />
+								</svg>
+								<h3 class="stages__title">Гарантия от&nbsp;12&nbsp;месяцев</h3>
+								<p class="stages__desc">
+									Гарантируем экстренную замену в&nbsp;случае неисправностей,
+									до&nbsp;выяснения обстоятельств
+								</p>
+							</li>
+							<li class="stages__item stages-item-bg2">
+								<svg class="stages__svg" viewBox="0 0 512.000000 512.000000">
+									<use xlink:href="./image/sprite.svg#money" />
+								</svg>
+								<h3 class="stages__title">Гибкие условия платежа</h3>
+								<p class="stages__desc">
+									Возможна частичная предоплата и&nbsp;отсрочка платежа
+								</p>
+							</li>
+							<li class="stages__item stages-item-bg3">
+								<svg class="stages__svg" viewBox="0 0 512.000000 512.000000">
+									<use xlink:href="./image/sprite.svg#check-list" />
+								</svg>
+								<h3 class="stages__title">Проверка перед отгрузкой</h3>
+								<p class="stages__desc">
+									Электрооборудование проходит испытательный стенд, где
+									исключаются возможные неисправности
+								</p>
+							</li>
+							<li class="stages__item stages-item-bg4">
+								<svg class="stages__svg" viewBox="0 0 512.000000 512.000000">
+									<use xlink:href="./image/sprite.svg#delivery" />
+								</svg>
+								<h3 class="stages__title">Способы доставки продукции</h3>
+								<p class="stages__desc">
+									Доставка по&nbsp;г. Екатеринбургу собственным транспортом,
+									отправка по&nbsp;РФ услугами транспортной компании
+								</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<!-- Partners  -->
+			<section class="partners">
+				<div class="container">
+					<div class="partners__wrapper">
+						<h2 class="partners__heading">Нам доверяют</h2>
+						<ul class="partners__list grid">
+							<li class="partners__item flex">
+								<img
+									class="partners__img"
+									src="./image/partners/logo1.png"
+									alt="Partners 1"
+								/>
+							</li>
+							<li class="partners__item flex">
+								<img
+									class="partners__img"
+									src="./image/partners/logo2.png"
+									alt="Partners 2"
+								/>
+							</li>
+							<li class="partners__item flex">
+								<img
+									class="partners__img"
+									src="./image/partners/logo3.png"
+									alt="Partners 3"
+								/>
+							</li>
+							<li class="partners__item flex">
+								<img
+									class="partners__img"
+									src="./image/partners/logo4.png"
+									alt="Partners 4"
+								/>
+							</li>
+							<li class="partners__item flex">
+								<img
+									class="partners__img"
+									src="./image/partners/logo5.png"
+									alt="Partners 5"
+								/>
+							</li>
+							<li class="partners__item flex">
+								<img
+									class="partners__img"
+									src="./image/partners/logo6.png"
+									alt="Partners 6"
+								/>
+							</li>
+							<li class="partners__item flex">
+								<img
+									class="partners__img"
+									src="./image/partners/logo7.png"
+									alt="Partners 7"
+								/>
+							</li>
+							<li class="partners__item flex">
+								<img
+									class="partners__img"
+									src="./image/partners/logo8.png"
+									alt="Partners 8"
+								/>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+		</main>
+		<!-- Footer -->
+		<footer class="footer" id="footer">
+			<div class="container">
+				<div class="footer__wrapper flex">
+					<!-- Logo and Message -->
+					<div class="footer__wrap-left">
+						<a class="footer__logo logo flex" href="#!">
+							<svg class="logo__svg" viewBox="0 0 256 256">
+								<use xlink:href="./image/sprite.svg#logo" />
+							</svg>
+							СнабТрейд
+						</a>
+					</div>
+					<!-- Info Work -->
+					<div class="footer__wrap-center">
+						<ul class="footer__center-list">
+							<li class="footer__center-item">
+								<h2 class="footer__heading">Офис</h2>
+								<p class="footer__desc">г. Екатеринбург</p>
+							</li>
+							<li class="footer__center-item">
+								<h2 class="footer__heading">ГРАФИК РАБОТЫ</h2>
+								<p class="footer__desc">Пн - Пт с&nbsp;8.00 до&nbsp;19.00</p>
+							</li>
+						</ul>
+					</div>
+					<!-- Contacts -->
+					<div class="footer__wrap-right">
+						<address class="footer__contact contact flex">
+							<h2 class="contact__heading">Контакты</h2>
+							<ul class="contact__list flex">
+								<li class="contact__item">
+									<a href="tel:+73433170042" class="contact__link"
+										>+7 (343) 317-00-42</a
+									>
+								</li>
+								<li class="contact__item">
+									<a href="tel:+79292021707" class="contact__link"
+										>+7 (929) 202-17-07</a
+									>
+								</li>
+							</ul>
+						</address>
+						<!-- Message -->
+						<address class="footer__message message flex">
+							<ul class="message__list flex">
+								<li class="message__item flex">
+									<a
+										class="message__link"
+										href="https://t.me/+79292021707"
+										target="_blank"
+										aria-label="Telegram"
+									>
+										<svg class="message__svg" viewBox="0 0 48 48">
+											<use xlink:href="./image/sprite.svg#telegram" />
+										</svg>
+									</a>
+								</li>
+								<li class="message__item flex">
+									<a
+										class="message__link"
+										href="https://wa.me/+79292021707"
+										target="_blank"
+										aria-label="
+                          WhatsApp"
+									>
+										<svg class="message__svg" viewBox="0 0 48 48">
+											<use xlink:href="./image/sprite.svg#whatsapp" />
+										</svg>
+									</a>
+								</li>
+								<li class="message__item flex">
+									<a
+										class="message__link"
+										href="mailto:snabtrade96@gmail.com"
+										target="_blank"
+										aria-label="
+												Mail"
+									>
+										<svg class="message__svg" viewBox="0 0 48 48">
+											<use xlink:href="./image/sprite.svg#mail" />
+										</svg>
+									</a>
+								</li>
+							</ul>
+						</address>
+					</div>
+				</div>
+				<!-- End -->
+				<div class="footer__wrap-end end flex">
+					<p class="end__copyright">
+						&copy;&nbsp;2014&nbsp;&mdash; 2023&nbsp;&mdash; Компания ООО
+						&laquo;СнабТрейд&raquo;. Все права защищены. Копирование запрещено.
+					</p>
+					<p class="end__copyright">
+						<a href="#!" class="copyright__link">Политика конфиденциальности</a>
+					</p>
+				</div>
+			</div>
+		</footer>
+		<!-- JS -->
+		<script defer src="./js/just-validate.min.js"></script>
+		<script defer src="./js/inputmask.min.js"></script>
+		<script defer src="./js/form.js"></script>
+		<script defer src="./js/mobile-nav.js"></script>
+		<script defer src="./js/modal.js"></script>
+		<script defer src="./js/show-more.js"></script>
+	</body>
+</html>

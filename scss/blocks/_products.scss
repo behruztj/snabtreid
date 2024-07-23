@@ -1,0 +1,122 @@
+.products {
+	margin-bottom: $bottom;
+}
+
+.products__wrapper {
+	flex-direction: column;
+	align-items: center;
+	gap: $gap;
+	padding: 2rem;
+	background-color: $concrete;
+	border-radius: $radius;
+}
+
+.products__list {
+	grid-template-columns: repeat(2, 1fr);
+	gap: $gap;
+}
+
+.products__item {
+	padding: 1rem;
+	border-radius: $radius;
+	-webkit-box-shadow: 2px 3px 10px 0px rgba(34, 60, 80, 0.2);
+	-moz-box-shadow: 2px 3px 10px 0px rgba(34, 60, 80, 0.2);
+	box-shadow: 2px 3px 10px 0px rgba(34, 60, 80, 0.2);
+}
+
+.card__picture {
+	align-items: center;
+	justify-content: center;
+	border-radius: $radius;
+}
+
+.card__img {
+	border-radius: $radius;
+}
+
+.card__info {
+	flex-grow: 1;
+	flex-direction: column;
+	align-items: start;
+	width: 50%;
+	padding: 1rem;
+}
+
+.card__title {
+	margin-bottom: 1.5rem;
+	font-size: clamp(1.6rem, 1.377rem + 1.11vw, 2.4rem);
+	font-weight: 600;
+	color: $scorpion;
+}
+
+.card__span {
+	margin-bottom: 1.5rem;
+	font-size: clamp(1.4rem, 1.289rem + 0.56vw, 1.8rem);
+	font-weight: 500;
+	color: $scorpion;
+}
+
+.card__desc {
+	margin-bottom: 1.5rem;
+	font-size: clamp(1.2rem, 1.089rem + 0.56vw, 1.6rem);
+	font-weight: 300;
+	color: $scorpion;
+}
+
+.card__button {
+	margin-top: auto;
+	padding: 0.8rem 6%;
+	font-size: clamp(1.2rem, 1.089rem + 0.56vw, 1.6rem);
+	font-weight: 300;
+	border-radius: $radius;
+	color: $concrete;
+	background-color: $scorpion;
+	transition: 0.2s ease-in;
+
+	&:hover{
+		color: $concrete;
+		background-color: $gray;
+	}
+}
+
+.products__button-show-more {
+	padding: 1rem 5%;
+	font-size: clamp(1.2rem, 1.089rem + 0.56vw, 1.6rem);
+	font-weight: 400;
+	color: $concrete;
+	background-color: $scorpion;
+	border-radius: $radius;
+	transition: 0.2s ease-in;
+
+	&:hover{
+		color: $concrete;
+		background-color: $gray;
+	}
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+  to {
+    opacity: 1;
+    max-height: 500px; /* Задайте значение, которое достаточно велико для ваших карточек */
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    max-height: 500px; /* Тот же самый размер, что и в fadeIn */
+  }
+  to {
+    opacity: 0;
+    max-height: 0;
+  }
+}
+
+
+
+
+

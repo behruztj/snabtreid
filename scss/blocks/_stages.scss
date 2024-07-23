@@ -1,0 +1,83 @@
+.stages {
+	margin-bottom: $bottom;
+}
+
+.stages__wrapper {
+	padding: 2rem;
+	background-color: $concrete;
+	border-radius: $radius;
+}
+
+.stages__list {
+	grid-template-columns: repeat(2, 1fr);
+	gap: $gap;
+}
+
+.stages__item {
+	padding: 2rem;
+	border-radius: $radius;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	-webkit-box-shadow: 2px 3px 10px 0px rgba(34, 60, 80, 0.2);
+	-moz-box-shadow: 2px 3px 10px 0px rgba(34, 60, 80, 0.2);
+	box-shadow: 2px 3px 10px 0px rgba(34, 60, 80, 0.2);
+}
+
+// Background
+.stages-item-bg1 {
+	background-image: linear-gradient(
+			38deg,
+			rgba(255, 255, 255, 1) 0%,
+			rgba(255, 255, 255, 0.7063200280112045) 100%
+		),
+		url('../image/stages/calendar.jpg');
+}
+
+.stages-item-bg2 {
+	background-image: linear-gradient(
+			38deg,
+			rgba(255, 255, 255, 1) 0%,
+			rgba(255, 255, 255, 0.7063200280112045) 100%
+		),
+		url('../image/stages/money.jpg');
+}
+
+.stages-item-bg3 {
+	background-image: linear-gradient(
+			38deg,
+			rgba(255, 255, 255, 1) 0%,
+			rgba(255, 255, 255, 0.7063200280112045) 100%
+		),
+		url('../image/stages/check-list.jpg');
+		background-position: center 10%;
+}
+
+.stages-item-bg4 {
+	background-image: linear-gradient(
+			38deg,
+			rgba(255, 255, 255, 1) 0%,
+			rgba(255, 255, 255, 0.7063200280112045) 100%
+		),
+		url('../image/stages/delivery.jpg');
+}
+
+.stages__svg {
+	margin-bottom: 1rem;
+	width: 3rem;
+	height: 3rem;
+	fill: $scorpion;
+}
+
+.stages__title {
+	margin-bottom: 1rem;
+	font-size: clamp(1.8rem, 1.717rem + 0.42vw, 2.1rem);
+	font-weight: 600;
+	color: $scorpion;
+}
+
+.stages__desc {
+	font-size: clamp(1.4rem, 1.344rem + 0.28vw, 1.6rem);
+	font-weight: 600;
+	color: $scorpion;
+}

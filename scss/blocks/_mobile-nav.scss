@@ -1,0 +1,165 @@
+.mobile-nav {
+	position: fixed;
+	left: -100%;
+	width: 32rem;
+	height: 100%;
+	z-index: 10;
+	display: flex;
+	flex-direction: column;
+	padding: 2rem 2rem 5rem;
+	background-color: $concrete;
+	transition: 0.2s ease-in;
+	border-radius: 0 1rem 1rem 0;
+	box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.mobile-nav__heading {
+	margin-bottom: 1.5rem;
+	font-size: clamp(1.2rem, 1.055rem + 0.73vw, 1.6rem);
+	font-weight: 600;
+	color: $scorpion;
+	text-transform: uppercase;
+}
+
+.mobile-nav--open {
+	left: 0;
+}
+
+.mobile-nav__wrapper {
+	flex-direction: column;
+	gap: $gap;
+	flex: 1;
+}
+
+.mobile-nav__list {
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 1rem;
+}
+
+.mobile-nav__item {
+	width: 100%;
+}
+
+.mobile-nav__link {
+	align-items: center;
+	gap: 0.5rem;
+	width: 100%;
+	height: 2.5rem;
+	font-size: 1.8rem;
+	font-weight: 400;
+	color: $scorpion;
+	transition: 0.2s ease-in-out;
+
+	&:hover {
+		color: $gray;
+	}
+}
+
+.mobile-nav__link-line {
+	width: 0;
+	height: 0.1rem;
+	background-color: $scorpion;
+	transition: 0.2s ease-in-out;
+}
+
+.mobile-nav__address {
+	flex-direction: column;
+	gap: 1rem;
+	padding-bottom: 1rem;
+	border-bottom: 0.1rem solid rgba(49, 51, 51, 0.1);
+}
+
+.mobile-nav__number {
+	align-items: center;
+	font-size: 1.9rem;
+	font-weight: 400;
+	color: $scorpion;
+	transition: 0.2s ease-in;
+
+	&:hover {
+		color: $gray;
+	}
+}
+
+.mobile-nav__address-social {
+	flex-direction: column;
+	gap: 1.5rem;
+}
+
+.mobile-nav__social-wrapper {
+	gap: 1rem;
+}
+
+.mobile-nav__social-heading {
+	font-weight: 600;
+	font-size: clamp(1.2rem, 1.055rem + 0.73vw, 1.6rem);
+	color: $scorpion;
+}
+
+.mobile-nav__social-link {
+	flex-grow: 1;
+	align-items: center;
+	padding: 0.5rem;
+	height: 4rem;
+	border: 0.1rem solid rgba(49, 51, 51, 0.1);
+	border-radius: 0.6rem;
+	box-shadow: 0 0.5rem 0.5rem 0 rgba(0, 0, 0, 0.1);
+	transition: 0.2s ease-in-out;
+
+	&:hover {
+		transform: scale(1.1);
+	}
+}
+
+.mobile__svg{
+	width: 2.4rem;
+	height: 2.4rem;
+}
+
+.mobile-nav__social-span {
+	font-size: 0.9rem;
+	color: $scorpion;
+}
+
+.mobile-nav__wrapper-address {
+	flex-direction: column;
+	gap: 2rem;
+	margin-top: auto;
+}
+
+.mobile-nav__btn-cross {
+	position: absolute;
+	right: 1.5rem;
+	top: 1rem;
+	width: 1rem;
+	height: 1rem;
+	background: transparent;
+	border: none;
+	cursor: pointer;
+}
+
+.mobile-nav__btn-cross.active .line1 {
+	transform: rotate(45deg);
+}
+
+.mobile-nav__btn-cross.active .line2 {
+	transform: rotate(-45deg);
+}
+
+.mobile-nav__cross-line {
+	position: absolute;
+	width: 100%;
+	height: 0.2rem;
+	background-color: $scorpion;
+	border-radius: 0.4rem;
+	transition: transform 0.3s ease;
+}
+
+.mobile-nav__cross-line.line1 {
+	transform-origin: center;
+}
+
+.mobile-nav__cross-line.line2 {
+	transform-origin: center;
+}

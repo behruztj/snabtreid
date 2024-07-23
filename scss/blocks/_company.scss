@@ -1,0 +1,46 @@
+.company{
+	margin-bottom: $bottom;
+}
+
+.company__wrapper {
+	gap: clamp(1rem, 0.636rem + 1.82vw, 2rem);
+}
+
+.company__left {
+	flex-direction: column;
+	justify-content: flex-end;
+	padding: 2rem;
+	background-color: $concrete;
+	background-image: url('../image/company/company-bg.jpeg');
+	background-position: center center; // x y
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-radius: $radius;
+}
+
+.company__left-desc {
+	padding: 1rem;
+	font-size: clamp(1.4rem, 1.327rem + 0.36vw, 1.6rem);
+	font-weight: 500;
+	color: $scorpion;
+	background-color: $concrete;
+	border-radius: $radius;
+}
+
+.company__right-list {
+	flex-direction: column;
+	padding: 2rem;
+	background-color: $concrete;
+	border-radius: $radius;
+}
+
+.company__right-item {
+	padding: 1rem 0;
+	font-size: clamp(1.4rem, 1.327rem + 0.36vw, 1.6rem);
+	font-weight: 500;
+	color: $scorpion;
+
+	&:not(:last-child) {
+		border-bottom: 0.1rem solid rgba(0, 0, 0, 0.3);
+	}
+}

@@ -1,0 +1,26 @@
+// Fonts
+$font-main: 'Roboto';
+
+// Colors
+$scorpion: #595959;
+$gray: #7f7f7f;
+$silver-chalice: #a5a5a5;
+$silver: #cccccc;
+$concrete: #f2f2f2;
+
+// Container
+$container-margin: 0 auto;
+$container-width: 1470px;
+$container-padding: 0 1.5rem;
+
+// Header height
+$header-height: 8.5rem;
+
+// Nav
+$gap: clamp(1rem, 0.636rem + 1.82vw, 2rem);
+
+// Border
+$radius: clamp(1rem, 0.636rem + 1.82vw, 2rem);
+
+// Margin Bottom
+$bottom: clamp(1rem, 0.443rem + 2.78vw, 3rem);

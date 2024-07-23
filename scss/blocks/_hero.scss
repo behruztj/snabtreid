@@ -1,0 +1,94 @@
+.hero{
+	margin-bottom: $bottom;
+}
+
+.hero__wrapper {
+	width: 100%;
+	gap: $gap;
+}
+
+.hero__wrap-left {
+	width: 100%;
+	padding: 5rem 2rem ;
+	background-color: $concrete;
+	border-radius: $radius;
+	background-image: linear-gradient(
+			0deg,
+			rgba(0, 0, 0, 0.15730042016806722) 0%,
+			rgba(0, 0, 0, 0.6418942577030813) 100%
+		),
+		url('../image/hero/hero-left.jpeg');
+	background-position: center 80%;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.hero__heading {
+	font-size: clamp(2.4rem, 1.309rem + 5.45vw, 5.4rem);
+	font-weight: 600;
+	color: $concrete;
+}
+
+.hero__desc {
+	width: 50%;
+	margin-top: clamp(1rem, -0.091rem + 5.45vw, 4rem);
+	margin-bottom: clamp(1.5rem, 0.227rem + 6.36vw, 5rem);
+	font-weight: 400;
+	font-size: clamp(1.6rem, 1.455rem + 0.73vw, 2rem);
+	color: $concrete;
+}
+
+.hero__btn-group {
+	align-items: center;
+	gap: $gap;
+}
+
+.hero__btn {
+	padding: 1rem 3%;
+	font-size: clamp(1.2rem, 1.089rem + 0.56vw, 1.6rem);
+	font-weight: 300;
+	color: $concrete;
+	background-color: $scorpion;
+	border-radius: $radius;
+	outline: none;
+	transition: 0.2s ease-in;
+
+	&:hover{
+		color: $concrete;
+		background-color: $gray;	
+	}
+}
+
+.hero__btn--second {
+	padding: 1rem 3%;
+	font-size: clamp(1.2rem, 1.089rem + 0.56vw, 1.6rem);
+	font-weight: 300;
+	color: $scorpion;
+	background-color: $silver;
+	border-radius: $radius;
+	outline: none;
+	transition: 0.2s ease-in;
+}
+
+.hero__wrap-right {
+	flex-direction: column;
+	justify-content: flex-end;
+	width: 30%;
+	padding: 2rem;
+	border-radius: $radius;
+	background-image: url('../image/hero/hero-right.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: $concrete;
+}
+
+.right__desc {
+	max-width: 100%;
+	padding: 1rem;
+	font-size: clamp(1.2rem, 1.055rem + 0.73vw, 1.6rem);
+	font-weight: 400;
+	color: $scorpion;
+	background-color: $concrete;
+	border-radius: $radius;
+}

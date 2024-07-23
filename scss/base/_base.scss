@@ -1,0 +1,42 @@
+html {
+	scroll-padding-top: $header-height;
+	scroll-behavior: smooth;
+	font-size: 62.5%;
+	background-color: $silver;
+}
+
+body {
+	position: relative;
+	margin: 0;
+	font-family: $font-main, sans-serif, system-ui;
+	color: $concrete;
+	text-wrap: balance;
+}
+
+// Container
+.container {
+	margin: $container-margin;
+	max-width: $container-width;
+	padding: $container-padding;
+}
+
+.grid {
+	display: grid;
+}
+
+.flex {
+	display: flex;
+}
+
+.none {
+	display: none;
+}
+
+.no-scroll {
+	overflow-y: hidden;
+}
+
+.visibility-hidden {
+	position: fixed;
+	transform: scale(0);
+}
